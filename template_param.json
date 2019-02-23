@@ -1,0 +1,90 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName": {
+            "value": "SQLONPREM"
+        },
+        "adminUsername": {
+            "value": "localadmin"
+        },
+        "adminPassword": {
+            "value": "Passw0rd!!!!!"
+        },
+        "vnetName": {
+            "value": "SQL-Demo-Vnet"
+        },
+        "vnetResourceGroup": {
+            "value": "MI-Demo-RG"
+        },
+        "subnetName": {
+            "value": "SQL"
+        },
+        "privateIp": {
+            "value": "192.168.0.10"
+        },
+        "enableAcceleratedNetworking": {
+            "value": "No"
+        },
+        "enablePublicIP": {
+            "value": "Yes"
+        },
+        "dnsLabelPrefix": {
+            "value": "sqlonprem-omegamadlab"
+        },
+        "asgIds": {
+            "value": []
+        },
+        "sqlVersion": {
+            "value": "SQL Server 2012 SP4 Enterprise on Windows Server 2012 R2"
+        },
+        "vmSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "useAHB": {
+            "value": "No"
+        },
+        "timeZone": {
+            "value": "(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna"
+        },
+        "osDiskSuffix": {
+            "value": "DISK0"
+        },
+        "AdditionalDiskSuffix": {
+            "value": "DISK"
+        },
+        "storageSKU": {
+            "value": "StandardSSD_LRS"
+        },
+        "workloadType": {
+            "value": "OLTP"
+        },
+        "#ofDataDisks": {
+            "value": 1
+        },
+        "dataDisksSize": {
+            "value": 32
+        },
+        "stripeDataDisks": {
+            "value": "No"
+        },
+        "#ofLogDisks": {
+            "value": 0
+        },
+        "logDisksSize": {
+            "value": 32
+        },
+        "stripeLogDisks": {
+            "value": "No"
+        },
+        "#ofAdditionalDisks": {
+            "value": 0
+        },
+        "additionalDisksSize": {
+            "value": 32
+        },
+        "EnableSqlIaasExtension": {
+            "value": "No"
+        }
+    }
+}
